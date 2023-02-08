@@ -5,6 +5,8 @@ import Home from './Pages/Home';
 import Series from './Pages/Series';
 import Comics from './Pages/Comics';
 import Error404 from './Pages/Error404';
+import Header from './Components/Header/Header';
+
 
 
 function App() {
@@ -13,6 +15,7 @@ function App() {
       {/* /react router dom v6 */}
       
     <BrowserRouter>
+      <Header/>
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/inicio' element={<Home/>} />
